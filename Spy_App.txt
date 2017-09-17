@@ -1,0 +1,48 @@
+name = "Ankita Rinwa"
+if len(name)>0:
+    new_message="I am Ankita"
+    print(new_message)
+    if len(" ")>0:
+        print "This second if is like a reply comment to parent comment on line7"
+        print "The parent of this coment is on line 2"
+if len("python")>0:
+    print "This is not a reply comment"
+    print "This is like a comment on the original/main post"
+    print "see how this line is in a vertcal line with line 3 and line 4."
+print "this print statement is outside all the if statement above"
+print "this is like another new comment"
+
+spy_name = raw_input("Welcome to spy chat,you must tell me your spy name first: ")
+if len(spy_name)>0 :
+    #Start writting from here now. See how this is under the if statement
+    print "welcome" + spy_name + " glad to have you bake with us"
+    spy_salutation = raw_input("Should I call you mister or miss ?: ")
+    spy_name = spy_salutation +" "+spy_name
+    print "Alright" +spy_salutation+" "+spy_name+"I like to know a litte bit"
+    #duck typing
+    spy_age =0
+    spy_ratting = 0.0
+    spy_is_online =False
+    spy_age = input("Enter your age? :")
+    if spy_age>17 and spy_age <50 :
+        print "You are alligable for spy chat"
+        spy_ratting = input("What is your spy_ratting")
+        if spy_ratting>4.5 :
+            print "Greart"
+        elif spy_ratting > 3.5 and spy_ratting <=4.5 :
+            print "You are one of the good one"
+        elif spy_ratting >= 2.5 and spy_ratting <= 3.5 :
+            print "You can do better"
+        else :
+            print "We can always do better"
+        spy_is_online = True
+        # when we concatinat int and str diff data type called
+        print "Authentication complete. Welcome %s age: %d and ratting of: %f Proud to have you onhoard" %(spy_name,spy_age,spy_ratting)
+        print "Authentication complete. Welcome "+spy_name+" age: "+spy_age+" and ratting of:"+ spy_ratting+" Proud to have you onhoard"
+    else :
+        print "you are not alligable for spy chat"
+
+else :
+    print "plese enter a valid name"
+    # to compare two different data tye like string and int called lexicoGraphic
+
